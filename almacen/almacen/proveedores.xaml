@@ -1,0 +1,74 @@
+﻿<Window x:Class="almacen.proveedores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:almacen"
+        mc:Ignorable="d"
+        Title="proveedores" Height="450" Width="800">
+    <Grid Margin="0,0,2,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF62ED0F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="PROVEEDORES" HorizontalAlignment="Left" Height="39" Margin="242,10,0,0" VerticalAlignment="Top" Width="259"/>
+        <Label Content="PROVEEDORES" HorizontalAlignment="Left" Height="39" Margin="242,10,0,0" VerticalAlignment="Top" Width="259" RenderTransformOrigin="0.538,0.942" Background="#FF8BE50A"/>
+        <Label Content="ID DE PROVEEDOR" HorizontalAlignment="Left" Height="36" Margin="21,58,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF7AFD2B"/>
+        <Label Content="NOMBRE DE EMPRESA" HorizontalAlignment="Left" Height="39" Margin="21,115,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF61DA19"/>
+        <Label Content="NOMBRE DE CONTACTO" HorizontalAlignment="Left" Height="38" Margin="21,172,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF74FF22"/>
+        <Label Content="DIRECCION" HorizontalAlignment="Left" Height="39" Margin="21,218,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF74EB2D"/>
+        <Label Content="TELEFONO" HorizontalAlignment="Left" Height="39" Margin="21,271,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF61E015"/>
+        <Label Content="CORREO ELECTRONICO" HorizontalAlignment="Left" Height="35" Margin="21,315,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF64C52B"/>
+        <Label Content="TERMINOS DE PAGO" HorizontalAlignment="Left" Height="34" Margin="21,372,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.538,0.942" Background="#FF66CC2A"/>
+        <TextBox x:Name="ID" HorizontalAlignment="Left" Height="34" Margin="242,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="NOMBRE_EMPRESA" HorizontalAlignment="Left" Height="34" Margin="242,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="NOMBRE_CONTACTO" HorizontalAlignment="Left" Height="34" Margin="242,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="DIRECCION" HorizontalAlignment="Left" Height="34" Margin="242,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="TELEFONO" HorizontalAlignment="Left" Height="34" Margin="242,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="CORREO_ELECTRONICO" HorizontalAlignment="Left" Height="34" Margin="242,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="TERMINO_PAGO" HorizontalAlignment="Left" Height="34" Margin="242,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <Button x:Name="OBTENER_PROVEEDOR" Content="OBTENER PROVEEDOR" HorizontalAlignment="Left" Height="52" Margin="570,100,0,0" VerticalAlignment="Top" Width="194" FontSize="16" Click="OBTENER_PROVEEDOR_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF44ED1B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AGREGAR_PROVEEDOR" Content="AGREGAR PROVEEDOR" HorizontalAlignment="Left" Height="45" Margin="570,172,0,0" VerticalAlignment="Top" Width="194" FontSize="14" Click="AGREGAR_PROVEEDOR_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF3EED2D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ACTUALIZAR_PROVEEDOR" Content="ACTUALIZAR PROVEEDOR" HorizontalAlignment="Left" Height="52" Margin="570,238,0,0" VerticalAlignment="Top" Width="194" FontSize="14" Click="ACTUALIZAR_PROVEEDOR_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF21E51E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ELIMINAR_PROVEEDOR" Content="ELIMINAR PROVEEDOR" HorizontalAlignment="Left" Height="49" Margin="570,315,0,0" VerticalAlignment="Top" Width="194" FontSize="14" Click="ELIMINAR_PROVEEDOR_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF4CE814" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ABRIR_INVENTARIO" Content="ABRIR INVENTARIO" HorizontalAlignment="Left" Height="52" Margin="470,372,0,0" VerticalAlignment="Top" Width="182" FontSize="16" Click="ABRIR_INVENTARIO_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF3DDD27" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

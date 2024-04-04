@@ -1,0 +1,52 @@
+﻿<Window x:Class="almacen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:almacen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFF41212" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="REGISTRAR" HorizontalAlignment="Left" Height="33" Margin="169,28,0,0" VerticalAlignment="Top" Width="231" FontSize="18" FontFamily="Algerian">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFD1919" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="NOMBRE" HorizontalAlignment="Left" Height="30" Margin="42,133,0,0" VerticalAlignment="Top" Width="134" FontSize="16" FontFamily="Algerian" RenderTransformOrigin="0.48,1.116"/>
+        <Label Content="CATEGORIA" HorizontalAlignment="Left" Height="30" Margin="42,183,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.488,2.392" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="CANTIDAD" HorizontalAlignment="Left" Height="30" Margin="42,222,0,0" VerticalAlignment="Top" Width="134" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="ESTADO" HorizontalAlignment="Left" Height="30" Margin="42,266,0,0" VerticalAlignment="Top" Width="134" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="PRECIO" HorizontalAlignment="Left" Height="30" Margin="42,319,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.603,2.087" FontSize="16" FontFamily="Algerian"/>
+        <TextBox x:Name="NOMBRE" HorizontalAlignment="Left" Height="30" Margin="221,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Background="#FFFAF8F8"/>
+        <TextBox x:Name="CATEGORIA" HorizontalAlignment="Left" Height="30" Margin="221,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="CANTIDAD" HorizontalAlignment="Left" Height="30" Margin="221,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="ESTADO" HorizontalAlignment="Left" Height="30" Margin="221,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="PRECIO" HorizontalAlignment="Left" Height="30" Margin="221,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <Button x:Name="REGISTRAR" Content="REGISTRAR" HorizontalAlignment="Left" Height="45" Margin="437,319,0,0" VerticalAlignment="Top" Width="147" FontFamily="Algerian" FontSize="16" Click="REGISTRAR_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFF71F1F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ABRIR_PROVEEDORES" Content="ABRIR PROVEEDORES" HorizontalAlignment="Left" Height="45" Margin="615,319,0,0" VerticalAlignment="Top" Width="175" FontFamily="Algerian" Click="ABRIR_PROVEEDORES_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE21E1E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="almacen.inventario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:almacen"
+        mc:Ignorable="d"
+        Title="inventario" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" Width="800">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF22A9F6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="INVINTARIO" HorizontalAlignment="Left" Height="48" Margin="260,10,0,0" VerticalAlignment="Top" Width="242" FontSize="36" FontFamily="Algerian">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF07ABEE" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content=" ID de entrada " HorizontalAlignment="Left" Height="30" Margin="77,100,0,0" VerticalAlignment="Top" Width="142" FontFamily="Algerian" FontSize="16"/>
+        <Label Content="ID de producto" HorizontalAlignment="Left" Height="30" Margin="77,158,0,0" VerticalAlignment="Top" Width="142" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="cantidad recibida" HorizontalAlignment="Left" Height="30" Margin="77,217,0,0" VerticalAlignment="Top" Width="166" FontSize="16" FontFamily="Algerian"/>
+        <Label Content=" fecha y hora" HorizontalAlignment="Left" Height="30" Margin="77,275,0,0" VerticalAlignment="Top" Width="142" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="ID de proveedor" HorizontalAlignment="Left" Height="30" Margin="77,327,0,0" VerticalAlignment="Top" Width="142" FontSize="16" FontFamily="Algerian"/>
+        <Label Content="número de factura " HorizontalAlignment="Left" Height="30" Margin="77,377,0,0" VerticalAlignment="Top" Width="185" FontSize="16" FontFamily="Algerian"/>
+        <TextBox x:Name="ID_DE_ENTRADA" HorizontalAlignment="Center" Height="30" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" RenderTransformOrigin="0.704,0.505"/>
+        <TextBox x:Name="ID_DE_PRODUCTO" HorizontalAlignment="Center" Height="30" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" RenderTransformOrigin="0.704,0.505"/>
+        <TextBox x:Name="CANTIDAD_RECIBIDA" HorizontalAlignment="Center" Height="30" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" RenderTransformOrigin="0.704,0.505"/>
+        <TextBox x:Name="ID_DE_PROVEEDOR" HorizontalAlignment="Center" Height="30" Margin="0,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" RenderTransformOrigin="0.704,0.505"/>
+        <TextBox x:Name="NUMERO_DE_FACTURA" HorizontalAlignment="Center" Height="30" Margin="0,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" RenderTransformOrigin="0.704,0.505"/>
+        <Button x:Name="REGISTRAR_ENTRADA" Content="REGISTRAR ENTRADA" HorizontalAlignment="Left" Height="46" Margin="538,100,0,0" VerticalAlignment="Top" Width="210" FontSize="16" FontFamily="Algerian" Click="REGISTRAR_ENTRADA_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF2099E9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <DatePicker x:Name="FECHA_HORA" Height="30" Margin="301,275,272,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="ABRIR_SALIDA_INVENTARIO" Content="ABRIR SALIDA INVENTARIO" HorizontalAlignment="Left" Height="51" Margin="538,217,0,0" VerticalAlignment="Top" Width="234" Background="#FF15C4E2" FontSize="16" FontFamily="Algerian" Click="ABRIR_SALIDA_INVENTARIO_Click"/>
+
+    </Grid>
+</Window>
